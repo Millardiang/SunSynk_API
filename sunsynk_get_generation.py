@@ -1,5 +1,5 @@
 # URL background
-#  https://pv.inteless.com/oauth/token 
+#  https://api.sunsynk.net/oauth/token 
 # Your login details are redirected to the authentication URL, which provides your bearer token for future API requests
 # 
 # https://sunsynk.net/ 
@@ -15,10 +15,10 @@ from requests.auth import HTTPBasicAuth
 my_user_email=str(sys.argv[1])
 my_user_password=str(sys.argv[2])
 
-loginurl = ('https://pv.inteless.com/oauth/token')
+loginurl = ('https://api.sunsynk.net/oauth/token')
 
 # API call to get realtime inverter related information
-plant_id_endpoint = ('https://pv.inteless.com/api/v1/plants?page=1&limit=10&name=&status=')
+plant_id_endpoint = ('https://api.sunsynk.net/api/v1/plants?page=1&limit=10&name=&status=')
 
 # This function will print your bearer/access token
 def my_bearer_token():
